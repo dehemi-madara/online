@@ -68,3 +68,15 @@ p.para{
     color: var(--text-color);
     font: normal 500 16px/25px var(--Roboto);
 }
+
+.font-roboto{
+    font-family: var(--Roboto);
+}
+
+button:focus,
+button:active,
+button:hover,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
