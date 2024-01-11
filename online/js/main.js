@@ -17,10 +17,26 @@ $(document).ready(function(){
 
     $('.project-area .button-group #btn1').trigger('click');
 
-    $('.test-popup-link').magnificPopup({
-        type: 'image'
-        // other options
+    $('.project-area .grid .test-popup-link').magnificPopup({
+        type: 'image',
+        gallery:{enabled:true}
       });
 
+
+    // owl-carousel
+
+    $('.site-main .about-area .owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        dots: true,
+        responsive:{
+            0:{
+                item:1
+            },
+            544:{
+                item:2
+            }
+        }
+    })
 
 });
